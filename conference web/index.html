@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+
+<style>
+    *{
+        padding: 0;
+       margin: 0;    
+    }
+     
+    
+    header {
+        background-color: #293f50;
+     
+        /* text-align: center; */
+        
+        display: grid;
+        padding: 60px;
+        grid-template-columns: 2fr 1fr 0.1fr;
+
+        grid-template-areas: 'heading  text text  '
+            'heading navbar navbar'
+            'itemdiv itemdiv itemdiv'
+
+
+        ;
+    }
+
+
+    .navitem {
+        color: aliceblue;
+        text-decoration: none;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .navitem:hover {
+        text-decoration: underline;
+        color: rgb(6, 132, 90);
+    }
+
+    .itemdiv {
+        /* background-color: blueviolet; */
+        text-align: center;
+        width: 75%;
+        height: auto;
+        box-sizing: border-box;
+        justify-self: center;
+        margin: 20px;
+    }
+
+    .item-a {
+        border: 2px solid whitesmoke;
+        padding: 15px;
+        border-radius: 4px;
+        font-size: x-large;
+        text-decoration: none;
+        color: aliceblue;
+        
+    }
+
+    .item-a:hover {
+        background-color: rgb(252, 254, 254);
+        color: rgb(4, 99, 67);
+
+    }
+
+
+    .section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        text-align: center;
+
+    }
+
+    .sectionitem {
+        width: 400px;
+        height: auto;
+        margin: 10px;
+        color: rgb(103, 120, 114);
+    }
+
+    .sectionitem-a {
+        text-decoration: none;
+        font-size: x-large;
+        color: rgb(4, 99, 67);
+        
+     
+    }
+
+    .sectionitem-a:hover {
+        color: rgb(98, 132, 103);
+    }
+    p{
+        text-align: left;
+        padding: 0px 10px 0px 30px;
+        font-size: larger;
+        /* font-family:  sans-serif; */
+    }
+    /* #register{
+
+    animation-name: fade;
+    animation-duration: 1.5s;
+    }  
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  */
+
+  #blink {
+  animation: blinker 1.0s linear infinite;
+  box-shadow: 2px 2px 5px black;
+}
+@keyframes blinker {
+  50% {
+      opacity: 0.1;
+      
+  }
+}
+    
+
+    footer {
+        background-color: #293f50;
+        padding: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+
+
+
+    @media (max-width:1400px) {
+ header{
+    display: grid;
+    padding: 60px;
+    grid-template-columns: 2fr 1fr 0.1fr;
+
+    grid-template-areas: 'heading heading  heading '
+    'text text text'
+        'navbar navbar navbar'
+        ' itemdiv itemdiv itemdiv'
+
+    ;
+ }    
+ footer{
+    background-color: #293f50;
+padding: 40px;
+display: grid;
+grid-template-columns: 1fr;
+text-align: center;
+ }
+}
+</style>
+
+<body>
+
+
+
+    <header>
+
+
+
+        <div style="grid-area: heading;">
+            
+            <a href="index.html"
+                style=" color: aliceblue;
+        text-decoration: none;  font-size: xxx-large; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;">
+                STYLES <br>CONFERENCES</a>
+        </div>
+
+
+        <nav class="navbar" style="grid-area: navbar;">
+            <marquee width="90%" direction="right" height="50px"><div style="grid-area: text; color: rgb(99, 193, 155); padding-left:40px ; font-size: xx-large;"> August
+                24–26th —
+                Chicago, IL</div></marquee>
+            <br>
+            <a href="index.html" class="navitem">HOME</a>
+            <a href="speaker.html" class="navitem">SPEAKER</a>
+            <a href="schedule.html" class="navitem">SCHEDULE</a>
+            <a href="venue.html" class="navitem">VENUE</a>
+            <a href="register.html" class="navitem">REGISTER</a>
+        </nav>
+
+
+        <div class="itemdiv" style="grid-area: itemdiv;">
+
+            <h1 class="item"
+                style="font-family:Georgia, Times, 'Times New Roman', serif ; color: rgb(99, 193, 155) ;">
+                Dedicated to the Craft of Building Websites</h1><br>
+
+            <p class="item" style="color: azure;font-size: x-large;">Every year the brightest web designers and
+                front-end developers descend on Chicago to
+                discuss the latest tech logies. Join us this August!</p>
+            <br><br>
+            <a href="register.html" class="item-a" id="blink" >Register Now</a>
+
+        </div>
+
+    </header>
+
+
+
+
+    <section class="section">
+
+
+
+        <div class="sectionitem">
+            <h2>SPEAKERS</h2>
+            <img src="imgs/s1.png" alt="">
+            <br>
+            <a href="speaker.html" class=" sectionitem-a">World-Class Speakers</a>
+            <br> <br>
+            <p >"Joining us from all around the world are over twenty fantastic speakers, here to share their stories."</p>
+        </div>
+
+        <div class="sectionitem">
+            <h2>SCHEDULE</h2>
+            <img src="imgs/s2.png" alt="">
+            <br>
+            <a href="schedule.html" class=" sectionitem-a">Three Inspiring Days</a>
+            <br><br>
+            <p >"Enjoy three inspiring and action-packed days of tals, gatherings, and all-around good times."</p>
+        </div>
+
+        <div class="sectionitem">
+            <h2>VENUE</h2>
+            <img src="imgs/s3.png" alt="">
+            <br>
+            <a href="venue.html" class=" sectionitem-a">The Chicago Theatre</a>
+            <br> <br>
+            <p>"Within the heart of downtown Chicago, The Chicago Theatre will provide a beautiful conference venue."</p>
+        </div>
+
+    </section>
+
+
+
+
+    <footer class="footer">
+        <div style="color: rgb(99, 193, 155);">
+            © Styles Conference
+        </div>
+
+        <div>
+            <a href="index.html" class="navitem">Home</a>
+            <a href="speaker.html" class="navitem">speaker</a>
+            <a href="schedule.html" class="navitem">schedule</a>
+            <a href="venue.html" class="navitem">venue</a>
+            <a href="register.html" class="navitem">Register</a>
+        </div>
+
+
+    </footer>
+
+
+
+</body>
+
+</html>

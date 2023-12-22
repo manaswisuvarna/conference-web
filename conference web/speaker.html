@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>speaker</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            color: #3e3737
+        }
+
+        .speakers {
+            padding: 100px;
+            margin: auto;
+            width: 75%;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            grid-template-areas: 'section aside'
+            ;
+        }
+
+        img {
+
+            border-radius: 100%;
+        }
+
+        p {
+         font-size: 19px;
+         /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+            
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: larger;
+        }
+
+        aside {
+            /* background-color: blue; */
+            text-align: center;
+            align-self: center;
+        }
+
+        .info {
+            border: 1px dotted black;
+            padding: 20px;
+            margin-left: 30px;
+            margin-right: 30px;
+
+
+        }
+
+
+
+        @media(max-width:900px)
+    {
+        .speakers{
+            width: 75%;
+        height: auto;
+        padding: 20px;
+        /* background-color: aqua; */
+            
+            display: grid;
+            grid-template-columns: 2fr ;
+            gap: 3rem;
+            grid-template-areas: 
+            'section section'
+            'aside aside'
+            ;
+        }
+    }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+
+
+        <div style="grid-area: heading;">
+            <a href="index.html"
+                style=" color: aliceblue;
+        text-decoration: none;  font-size: xxx-large; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;">
+                STYLES <br>CONFERENCES</a>
+        </div>
+
+
+        <nav class="navbar" style="grid-area: navbar;">
+            <marquee width="90%" direction="right" height="50px"><div style="grid-area: text; color: rgb(99, 193, 155); padding-left:40px ; font-size: xx-large;"> August
+                24–26th —
+                Chicago, IL</div></marquee>
+            <br>
+            <a href="index.html" class="navitem">HOME</a>
+            <a href="speaker.html" class="navitem">SPEAKER</a>
+            <a href="schedule.html" class="navitem">SCHEDULE</a>
+            <a href="venue.html" class="navitem">VENUE</a>
+            <a href="register.html" class="navitem">REGISTER</a>
+        </nav>
+
+
+    </header>
+
+
+
+
+
+    <div class="itemdiv">
+
+        <h1 class="item"
+            style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;color:  rgb(2, 130, 87);margin-top: 0px;">
+            Speakers</h1>
+        <br>
+        <p class="item" style=" color: rgb(4, 99, 67);
+        font-size: x-large; ">
+            We’re happy to welcome over twenty speakers to present on the industry’s latest technologies. Prepare for an
+            inspiration extravaganza.</p>
+        <br>
+
+
+    </div>
+
+
+    <!-- aaron -->
+
+
+    <div class="speakers">
+        <section class="speaker" id="aaron" style="grid-area: section;">
+            <span style="font-size: xxx-large;">Aaron Irizarry</span><br>
+            <span style="font-size: xx-large;">DESIGNING A CULTURE OF DESIGN</span>
+              <br><br>
+            <p>Workplace culture doesn’t start with beanbags, foosball tables, or a beer fridge, and it doesn’t end with neckties, PCs, or big corporations. It’s the unwritten rules, behavior, beliefs, and the motivations that enable good work to get done, or it’s what stifles a workforce. For design to be most effective and for designers to feel valued, we need to work in a culture that embraces design and allows it to succeed</p>
+            <br>
+            <p>In Aaron’s session he will explore how to recognize the traits of organizations that *get* design, both large and small. He will share what those teams, departments, and companies have that others don’t, and more importantly, how to begin to change your own workplace’s culture. Once you’ve worked within a culture of design it’s almost impossible to imagine yourself anywhere else.
+            </p>
+            <br>
+            <p style="font-size: x-large;">ABOUT AARON</p>
+            <br>
+            <p>Aaron Irizarry is a Senior Product Designer for Nasdaq OMX, a lover of heavy metal, a foodie, and a master of BBQ arts. You can find some of his thoughts and presentations on the conversation surrounding design over at discussingdesign.com.</p>
+        </section>
+
+
+        <aside style="grid-area: aside;">
+
+            <img src="imgs/f1.png" alt="" width="150px" height="150px">
+
+            <div class="info">
+                <a href="https://twitter.com/aaroni">@aaroni</a>
+                <br>
+                <a href="http://www.thisisaaronslife.com/">thisisaaronslife.com</a>
+            </div>
+        </aside>
+
+
+    </div>
+
+
+
+    <!-- Adam Connor -->
+
+    <div class="speakers">
+        <section class="speaker" id="adam" style="grid-area: section;">
+            <span style="font-size: xxx-large;">Adam Connor</span><br>
+            <span style="font-size: larger;">LIGHTS! CAMERA! INTERACTION! DESIGN INSPIRATION FROM FILMMAKERS</span>
+            <br><br>
+            <p>Films succeed in evoking responses and engaging audiences only with a combination of well-written narrative and effective storytelling technique. It’s the filmmaker’s job to put this together. To do so they’ve developed processes, tools and techniques that allow them to focus attention, emphasize information, foreshadow and produce the many elements that together comprise a well-told story.</p>
+            <br>
+            <p>With this workshop, we’ll revisit the topic of using stories in design and expand on the technical aspects used in film to communicate. We’ll look at some tools used in film, such as cinematic patterns, beat sheets, and storyboards. We’ll consider why they’re used and how we might look to them for inspiration.
+            </p>
+            <br>
+            <p style="font-size: x-large;">ABOUT ADAM</p>
+            <br>
+            <p>Adam Connor is a designer, illustrator and speaker passionate about collaboration, communication, creativity and storytelling. As an Experience Design Director with Mad*Pow, Adam combines 10+ years of experience in interaction and experience design with a background in computer science, film, and animation to create effective and easy-to-use digital products and services. He believes that no matter how utilitarian a tool is, at the core of its creation lies a story; uncovering that story is key to its success. Occasionally, he shares his perspectives on design at adamconnor.com and discussingdesign.com.</p>
+            
+        </section>
+
+
+        <aside style="grid-area: aside;">
+
+            <img src="imgs/f2.png" alt="" width="150px" height="150px">
+
+            <div class="info">
+                <a href="https://twitter.com/adamconnor">@adamconnor</a>
+                <br>
+                <a href="https://adamconnor.carrd.com/">adamconnor.com</a>
+            </div>
+        </aside>
+
+
+    </div>
+
+
+    <!-- AJ Self -->
+    <div class="speakers">
+        <section class="speaker" id="aj" style="grid-area: section;">
+            <span style="font-size: xxx-large;">AJ Self</span><br>
+            <span style="font-size: x-large;">(YOU SHOULD BE) TESTING YOUR JAVASCRIPT</span>
+
+            <br><br>
+            <p>JavaScript applications frequently utilize battle-tested libraries like jQuery, AngularJS, Backbone.js and more, but how can we be sure that our code is ready for production? This talk will share tips on how writing tests can be written easily and quickly and how to remove buggy code through testing.</p>
+            
+            <br>
+            <p style="font-size: x-large;">ABOUT AJ</p>
+            <br>
+            <p>AJ is a software engineer specializing in JavaScript working at Belly in Chicago. Lately he has been writing applications with AngularJS and loving it. When not coding he is out loving the outdoors with his dog, Sunshine.</p>
+        </section>
+
+
+        <aside style="grid-area: aside;">
+
+            <img src="imgs/f3.png" alt="" width="150px" height="150px">
+
+            <div class="info">
+                <a href="https://twitter.com/ajself">@ajself</a>
+                <br>
+                <a href="http://www.thisisaaronslife.com/">thisisaaronslife.com</a>
+            </div>
+        </aside>
+
+
+    </div>
+
+
+    <!-- Arman Ghosh -->
+
+    <div class="speakers">
+        <section class="speaker" id="arman" style="grid-area: section;">
+            <span style="font-size: xxx-large;">Arman Ghosh</span><br>
+            <span style="font-size: x-large;">DESIGNING DEALS: HOW GOOD DESIGN DRIVES SALES</span>
+
+            <br><br>
+            <p>Perception influences decisions, especially when it comes to selling products and services. Learn why before you even start sales conversations; good, thoughtful design and presentation will define you and your ability to close deals.</p>
+            
+            <br>
+            <p style="font-size: x-large;">ABOUT ARMAN</p>
+            <br>
+            <p>Arman is an entrepreneur who has his roots planted in building aggressive sales and revenue-generating teams. Having built out national sales and operations teams in the B2B and consumer spaces, his focus has been driving aggressive growth for technology-based companies. He has an extensive operating background and has built a career disrupting sales processes and approaches with companies doing the same in their respective technology spaces.</p>
+        </section>
+
+
+        <aside style="grid-area: aside;">
+
+            <img src="imgs/f4.png" alt="" width="150px" height="150px">
+
+            <div class="info">
+                <a href="https://twitter.com/aaroni">@aaroni</a>
+                <br>
+                <a href="http://www.thisisaaronslife.com/">thisisaaronslife.com</a>
+            </div>
+        </aside>
+
+
+    </div>
+
+
+   
+
+    <!-- Bermon Painter -->
+
+    <div class="speakers">
+        <section class="speaker" id="bermon" style="grid-area: section;">
+            <span style="font-size: xxx-large;">Bermon Painter</span><br>
+            <span style="font-size: x-large;">DEATH TO WIREFRAMES: LONG LIVE RAPID PROTOTYPING</span>
+
+            <br><br>
+            <p>Static wireframes are a drag on the whole design process. Prototyping makes things a little better by allowing you to stitch together static wireframes or mockups while adding basic interactions. Rapid prototyping with HTML, CSS, and JavaScript is even better and faster; it increases collaboration and improves the iteration process. Kill your wireframes. Long live rapid prototyping.</p>
+            
+            <br>
+            <p style="font-size: x-large;">ABOUT BERMON</p>
+            <br>
+            <p>Bermon is the organizer of various community groups for user experience designers and front-end developers, and the organizer of Blend Conference, a three-day, multi-track event for user experience strategists, designers and developers. He also leads the user experience team for Cardinal Solutions’ Charlotte office, where he consults with large enterprise clients on interesting problems across user experience, design and front-end development</p>
+        </section>
+
+
+        <aside style="grid-area: aside;">
+
+            <img src="imgs/f5.png" alt="" width="150px" height="150px">
+
+            <div class="info">
+                <a href="https://twitter.com/aaroni">@aaroni</a>
+                <br>
+                <a href="http://www.thisisaaronslife.com/">thisisaaronslife.com</a>
+            </div>
+        </aside>
+
+
+    </div>
+
+    <!-- Shay Howe -->
+    <div class="speakers">
+        <section class="speaker" id="shay" style="grid-area: section;">
+            <span style="font-size: xxx-large;">Shay Howe</span><br>
+            <span style="font-size: x-large;">LESS IS MORE: HOW CONSTRAINTS CULTIVATE GROWTH</span>
+
+            <br><br>
+            <p>By setting constraints, we force ourselves to be more productive. They help us make decisions, creating focus around the problem we are trying to solve. They improve our consistency, which provides a better experience for our users. And they help us grow, a valuable asset in times of innovation.</p>
+            
+            <br>
+            <p style="font-size: x-large;">ABOUT SHAY</p>
+            <br>
+            <p>As a designer and front-end developer, Shay Howe has a passion for solving problems while building creative and intuitive products. Shay specializes in product design and interface development, specialties which he regularly writes and speaks about.</p>
+        </section>
+
+        <aside style="grid-area: aside;">
+
+            <img src="imgs/f6.png" alt="" width="150px" height="150px">
+
+            <div class="info">
+                <a href="https://twitter.com/adamconnor">@adamconnor</a>
+                <br>
+                <a href="https://adamconnor.carrd.com/">adamconnor.com</a>
+            </div>
+        </aside>
+       
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div style="color: rgb(99, 193, 155);">
+            © Styles Conference
+        </div>
+
+        <div>
+            <a href="index.html" class="navitem">Home</a>
+            <a href="speaker.html" class="navitem">speaker</a>
+            <a href="schedule.html" class="navitem">schedule</a>
+            <a href="venue.html" class="navitem">venue</a>
+            <a href="register.html" class="navitem">Register</a>
+        </div>
+
+
+    </footer>
+
+</body>
+
+</html>

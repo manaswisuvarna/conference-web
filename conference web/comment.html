@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comments</title>
+    <link rel="stylesheet" href="index.css">
+
+<style>
+    .testimonial-heading{
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial-heading h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+    background-color: #293f50;
+   
+
+    color: #ffffff;
+    padding: 10px 20px;
+}
+.testimonial-heading span{
+    font-size: 1.3rem;
+    color: #252525;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.testimonial-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+}
+.testimonial-box{
+    width:500px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+.profile-img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong{
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+.name-user span{
+    color: #979797;
+    font-size: 0.8rem;
+}
+.reviews{
+    color: #f9d71c;
+}
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.client-comment p{
+    font-size: 0.9rem;
+    color: #4b4b4b;
+}
+.testimonial-box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+ 
+@media(max-width:1060px){
+    .testimonial-box{
+        width:45%;
+        padding: 10px;
+    }
+}
+@media(max-width:790px){
+    .testimonial-box{
+        width:100%;
+    }
+    .testimonial-heading h1{
+        font-size: 1.4rem;
+    }
+}
+@media(max-width:340px){
+    .box-top{
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    .reviews{
+        margin-top: 10px;
+    }
+}
+::selection{
+    color: #ffffff;
+    background-color: #252525;
+}
+</style>
+
+
+
+</head>
+
+
+
+
+<body>
+    <header>
+
+
+        <div style="grid-area: heading;">
+            <a href="index.html"
+                style=" color: aliceblue;
+        text-decoration: none;  font-size: xxx-large; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;">
+                STYLES <br>CONFERENCES</a>
+        </div>
+
+
+        <nav class="navbar" style="grid-area: navbar;">
+            <div style="grid-area: text; color: rgb(99, 193, 155); padding-left:40px ; font-size: xx-large;"> August
+                24-26th —
+                Chicago, IL</div>
+            <br>
+            <a href="index.html" class="navitem">HOME</a>
+            <a href="speaker.html" class="navitem">SPEAKER</a>
+            <a href="schedule.html" class="navitem">SCHEDULE</a>
+            <a href="venue.html" class="navitem">VENUE</a>
+            <a href="register.html" class="navitem">REGISTER</a>
+        </nav>
+
+
+    </header>
+
+<section>
+
+    <div class="testimonial-heading">
+        <span>Comments</span>
+        <h1>Clients Says</h1>
+    </div>
+
+    <div class="testimonial-box-container">
+        <!--BOX-1-------------->
+        <div class="testimonial-box">
+            <!--top------------------------->
+            <div class="box-top">
+                <!--profile----->
+                <div class="profile">
+                    <!--img---->
+                    <div class="profile-img">
+                        <img src="imgs/f2.png" />
+                    </div>
+                    <!--name-and-username-->
+                    <div class="name-user">
+                        <strong>Touseeq Ijaz</strong>
+                        <span>@touseeqijazweb</span>
+                    </div>
+                </div>
+                <!--reviews------>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i><!--Empty star-->
+                </div>
+            </div>
+            <!--Comments---------------------------------------->
+            <div class="client-comment">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident
+                    temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur
+                    voluptates incidunt blanditiis sed atque cumque.</p>
+            </div>
+        </div>
+        <!--BOX-2-------------->
+        <div class="testimonial-box">
+            <!--top------------------------->
+            <div class="box-top">
+                <!--profile----->
+                <div class="profile">
+                    <!--img---->
+                    <div class="profile-img">
+                        <img src="imgs/f3.png" />
+                    </div>
+                    <!--name-and-username-->
+                    <div class="name-user">
+                        <strong>J.K Rowling</strong>
+                        <span>@jkrowling</span>
+                    </div>
+                </div>
+                <!--reviews------>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><!--Empty star-->
+                </div>
+            </div>
+            <!--Comments---------------------------------------->
+            <div class="client-comment">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident
+                    temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur
+                    voluptates incidunt blanditiis sed atque cumque.</p>
+            </div>
+        </div>
+        <!--BOX-3-------------->
+        <div class="testimonial-box">
+            <!--top------------------------->
+            <div class="box-top">
+                <!--profile----->
+                <div class="profile">
+                    <!--img---->
+                    <div class="profile-img">
+                        <img src="imgs/f5.png" />
+                    </div>
+                    <!--name-and-username-->
+                    <div class="name-user">
+                        <strong>Harry Potter</strong>
+                        <span>@DanielRedclief</span>
+                    </div>
+                </div>
+                <!--reviews------>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i><!--Empty star-->
+                </div>
+            </div>
+            <!--Comments---------------------------------------->
+            <div class="client-comment">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident
+                    temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur
+                    voluptates incidunt blanditiis sed atque cumque.</p>
+            </div>
+        </div>
+        <!--BOX-4-------------->
+        <div class="testimonial-box">
+            <!--top------------------------->
+            <div class="box-top">
+                <!--profile----->
+                <div class="profile">
+                    <!--img---->
+                    <div class="profile-img">
+                        <img src="imgs/f4.png" />
+                    </div>
+                    <!--name-and-username-->
+                    <div class="name-user">
+                        <strong>Oliva</strong>
+                        <span>@Olivaadward</span>
+                    </div>
+                </div>
+                <!--reviews------>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i><!--Empty star-->
+                </div>
+            </div>
+            <!--Comments---------------------------------------->
+            <div class="client-comment">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident
+                    temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur
+                    voluptates incidunt blanditiis sed atque cumque.</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="gallery">
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+    <footer class="footer">
+        <div style="color: rgb(99, 193, 155);">
+            © Styles Conference
+        </div>
+
+        <div>
+            <a href="index.html" class="navitem">Home</a>
+            <a href="speaker.html" class="navitem">speaker</a>
+            <a href="schedule.html" class="navitem">schedule</a>
+            <a href="venue.html" class="navitem">venue</a>
+            <a href="register.html" class="navitem">Register</a>
+        </div>
+
+
+    </footer>
+</body>
+</html>
